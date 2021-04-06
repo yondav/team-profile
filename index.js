@@ -2,8 +2,8 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
 const questionsModule = require('./lib/questions');
-const classesModule = require('./lib/classes');
 const { Manager, Engineer, Intern } = require('./lib/classes');
+// const employeeCard = require('./src/renderHTML');
 
 const team = [];
 
@@ -48,4 +48,11 @@ function ask() {
   });
 }
 
-ask();
+function init() {
+  ask().then(() => {
+    console.log(team);
+  });
+  // .then(console.log('cool'));
+}
+
+init();
