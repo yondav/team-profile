@@ -47,6 +47,5 @@ function ask() {
     }
   });
 }
-console.log(team);
 
 ask();
