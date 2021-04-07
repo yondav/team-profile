@@ -3,7 +3,7 @@ const fs = require('fs');
 const inquirer = require('inquirer');
 const questionsModule = require('./lib/questions');
 const { Manager, Engineer, Intern } = require('./lib/classes');
-// const employeeCard = require('./src/renderHTML');
+const renderEmployeeCard = require('./src/renderHTML');
 
 const team = [];
 
@@ -44,15 +44,25 @@ function ask() {
             });
         }
       });
+    } else {
+      renderEmployeeCard(team, __dirname);
     }
   });
 }
 
 function init() {
-  ask().then(() => {
-    console.log(team);
-  });
-  // .then(console.log('cool'));
+  ask();
 }
 
 init();
+
+// function test() {
+//   const mockTeam = [
+//     new Manager('john', '10', 'email@email.com', '111.111.1111'),
+//     new Engineer('Jane', '15', 'jane@email.com', 'jane'),
+//     new Intern('Nora', '20', 'nora@gmail.com', 'university'),
+//   ];
+//   renderEmployeeCard(mockTeam, __dirname);
+// }
+
+// test();
