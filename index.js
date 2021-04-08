@@ -59,17 +59,12 @@ function ask() {
 
 ask();
 
-// function init() {
-//   ask();
-// }
-
-// init();
-
+// mock array of employees to run app without having to go through the inquirer prompts
 // function test() {
 //   const mockTeam = [
-//     new Manager('john', '10', 'email@email.com', '111.111.1111'),
-//     new Engineer('Jane', '15', 'jane@email.com', 'jane'),
-//     new Intern('Nora', '20', 'nora@gmail.com', 'university'),
+//     new Manager('John Doe', '10', 'john@company.com', '111.111.1111'),
+//     new Engineer('Jane Smith', '15', 'jane@company.com', 'jane'),
+//     new Intern('Nora Grizzwold', '20', 'nora@company.com', 'Harvard University'),
 //   ];
 //   renderEmployeeCard(mockTeam, __dirname);
 // }

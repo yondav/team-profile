@@ -66,17 +66,17 @@ function getExtra(employee) {
   switch (employee.role) {
     case 'Manager':
       return `
-      <span>Office Number:</span>
+      <span><i class="fas fa-phone fa-lg"></i></span>
       <span><a href="tel:+${employee.officeNumber}">${employee.officeNumber}</a></span>
       `;
     case 'Engineer':
       return `
-      <span>Github:</span>
-      <span><a href="https://github.com/${employee.github}">${employee.github}</a></span>
+      <span><i class="fab fa-github fa-lg"></i></span>
+      <span><a href="https://github.com/${employee.github}">github.com/${employee.github}</a></span>
       `;
     case 'Intern':
       return `
-      <span>School:</span>
+      <span><i class="fas fa-university fa-lg"></i></span>
       <span>${employee.school}</span>
       `;
   }

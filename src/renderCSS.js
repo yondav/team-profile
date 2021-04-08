@@ -19,7 +19,7 @@ body {
   width: 100vw;
   height: 100vh;
   font-family: 'Muli', monospace;
-  background-color: #333333;
+  background-color: #ece9e6;
 }
 
 header {
@@ -27,10 +27,11 @@ header {
   padding: 4rem;
   margin-bottom: 2rem;
   text-align: center;
-  color: #ece9e6;
-  background: linear-gradient(180deg, rgba(208, 123, 179, 1) 0%, rgba(208, 123, 179, 0.5) 100%);
-  border-bottom-right-radius: 8px;
-  border-bottom-left-radius: 8px;
+  color: #333333;
+  background-color: #c0e5e4;
+  /* background: linear-gradient(180deg, rgb(189, 245, 242) 0%, rgba(69, 84, 221, 0.5) 100%); */
+  /* border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px; */
   box-shadow: rgba(0, 0, 0, 0.35) 0.95px 8.95px 7.6px;
 }
 
@@ -66,8 +67,10 @@ article:active {
   width: 100%;
   padding: 0.8rem;
   font-family: 'Futura', sans-serif;
-  color: #ece9e6;
-  background: linear-gradient(180deg, rgba(208, 123, 179, 1) 0%, rgba(208, 123, 179, 0.5) 100%);
+  color: #333333;
+  background-color: #c0e5e4;
+  /* background: linear-gradient(180deg, rgb(69, 84, 221) 0%, rgba(69, 84, 221, 0.5) 100%); */
+  border-bottom: solid 1px #333333;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 }
@@ -82,7 +85,7 @@ article:active {
   flex-direction: column;
   justify-content: space-around;
   padding: 0.5rem;
-  background-color: #ece9e6;
+  background-color: #fafafa;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
 }
@@ -91,6 +94,7 @@ article:active {
   display: flex;
   justify-content: space-between;
   padding: 1rem;
+  border-bottom: solid 1px #333333;
 }
 
 a {
@@ -102,7 +106,7 @@ a {
 a:hover,
 a:focus,
 a:active {
-  color: #d07bb3;
+  color: #3e8884;
   text-decoration: underline;
 }
   `;
