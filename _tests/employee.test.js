@@ -8,6 +8,7 @@ describe('Employee', () => {
       expect(employee.name).toEqual('Francisco Lindor');
       expect(employee.id).toEqual(12);
       expect(employee.email).toEqual('mrsmile@mets.com');
+      expect(employee.role).toEqual('Employee');
     });
     it('should have methods: getName, getId, getEmail, getRole', () => {
       const employee = new Employee('Francisco Lindor', 12, 'mrsmile@mets.com');

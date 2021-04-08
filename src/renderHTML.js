@@ -30,11 +30,11 @@ function renderEmployeeCard(x, filePath) {
       </div>
       <div class="card-content">
         <div class="id">
-          <span>ID:</span>
+          <span><i class="fas fa-id-card fa-lg"></i></span>
           <span>${Employee.id}</span>
         </div>
         <div class="email">
-          <span>Email:</span>
+          <span><i class="fas fa-envelope fa-lg"></i></span>
           <span><a href="mailto:${Employee.email}">${Employee.email}</a></span>
         </div>
         <div class="extra">

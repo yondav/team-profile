@@ -3,7 +3,7 @@ const fs = require('fs');
 const inquirer = require('inquirer');
 
 // imported modules from ./lib
-const questionsModule = require('./lib/questions');
+const questionsModule = require('./src/questions');
 const renderEmployeeCard = require('./src/renderHTML');
 const renderCSS = require('./src/renderCSS');
 
