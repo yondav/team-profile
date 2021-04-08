@@ -1,9 +1,15 @@
 // imported modules
 const fs = require('fs');
 const inquirer = require('inquirer');
+
+// imported modules from ./lib
 const questionsModule = require('./lib/questions');
-const { Manager, Engineer, Intern } = require('./lib/classes');
 const renderEmployeeCard = require('./src/renderHTML');
+
+// imported variables
+const Manager = require('./lib/manager');
+const Engineer = require('./lib/engineer');
+const Intern = require('./lib/intern');
 
 const team = [];
 

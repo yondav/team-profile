@@ -45,6 +45,14 @@ article {
   height: 15rem;
   margin: 0 1rem 3rem;
   box-shadow: rgba(0, 0, 0, 0.35) 0.95px 4.95px 7.6px;
+  transition: all 0.4s ease-in-out;
+}
+
+article:hover,
+article:focus,
+article:active {
+  transform: scale(1.2);
+  box-shadow: rgba(0, 0, 0, 0.473) 0.95px 14.95px 7.6px;
 }
 
 .card-header {
@@ -71,4 +79,18 @@ article {
   display: flex;
   justify-content: space-between;
   padding: 1rem;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+  transition: all 0.4s ease-in-out;
+}
+
+a:hover,
+a:focus,
+a:active {
+  color: #ce9178;
+  text-decoration: underline;
+  /* text-shadow: rgba(0, 0, 0, 0.644) 0.95px 4.95px 7.6px; */
 }
