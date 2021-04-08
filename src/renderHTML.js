@@ -2,7 +2,6 @@ const fs = require('fs');
 const path = require('path');
 
 function renderEmployeeCard(x, filePath) {
-  // let displayEmployee = x.map((Employee) => {
   let HTML = `<!DOCTYPE html>
   <html lang="en">
     <head>
@@ -13,7 +12,7 @@ function renderEmployeeCard(x, filePath) {
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
       />
-      <link rel="stylesheet" href="./src/template.css" />
+      <link rel="stylesheet" href="./style.css" />
     </head>
   
     <body>
@@ -27,7 +26,7 @@ function renderEmployeeCard(x, filePath) {
     <article class="team-member">
       <div class="card-header">
         <h2>${Employee.name}</h2>
-        <h3>${Employee.role}</h3>
+        ${getIcon(Employee)}
       </div>
       <div class="card-content">
         <div class="id">
@@ -53,6 +52,16 @@ function renderEmployeeCard(x, filePath) {
   writeHTML(HTML, filePath);
 }
 
+function getIcon(employee) {
+  switch (employee.role) {
+    case 'Manager':
+      return `<h3>${employee.role} <i class="fas fa-user-secret fa-lg"></i></h3>`;
+    case 'Engineer':
+      return `<h3>${employee.role} <i class="fas fa-laptop-code fa-lg"></i></h3>`;
+    case 'Intern':
+      return `<h3>${employee.role} <i class="fas fa-user-graduate fa-lg"></i></i></h3>`;
+  }
+}
 function getExtra(employee) {
   switch (employee.role) {
     case 'Manager':
@@ -74,7 +83,12 @@ function getExtra(employee) {
 }
 
 function writeHTML(html, filePath) {
-  fs.writeFileSync(path.join(filePath, 'team.html'), html);
+  const dir = path.join(filePath, 'dist');
+  fs.mkdir(dir, { recursive: true }, (err) => {
+    err ? console.error(err) : process.chdir(dir);
+    fs.writeFileSync('team.html', html);
+    fs.writeFileSync('style.css', CSS);
+  });
 }
 
 module.exports = renderEmployeeCard;

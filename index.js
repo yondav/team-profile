@@ -5,6 +5,7 @@ const inquirer = require('inquirer');
 // imported modules from ./lib
 const questionsModule = require('./lib/questions');
 const renderEmployeeCard = require('./src/renderHTML');
+const renderCSS = require('./src/renderCSS');
 
 // imported variables
 const Manager = require('./lib/manager');
@@ -56,11 +57,13 @@ function ask() {
   });
 }
 
-function init() {
-  ask();
-}
+ask();
 
-init();
+// function init() {
+//   ask();
+// }
+
+// init();
 
 // function test() {
 //   const mockTeam = [

@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Mono:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap');
+CSS = `
+/* imports from adobe fonts */
+@import url('https://use.typekit.net/kyq7lzo.css');
+@import url('https://use.typekit.net/kyq7lzo.css');
 
 /* Box sizing rules */
 *,
@@ -12,24 +15,28 @@
 body {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  font-family: 'Roboto Mono', monospace;
-  background-color: #ece9e6;
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Muli', monospace;
+  background-color: #333333;
 }
 
 header {
-  width: 100vw;
-  padding: 3rem;
+  width: 100%;
+  padding: 4rem;
   margin-bottom: 2rem;
   text-align: center;
-  color: #fafafa;
-  background-color: #333333;
-  box-shadow: rgba(0, 0, 0, 0.35) 0.95px 4.95px 7.6px;
+  color: #ece9e6;
+  background: linear-gradient(180deg, rgba(208, 123, 179, 1) 0%, rgba(208, 123, 179, 0.5) 100%);
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0.95px 8.95px 7.6px;
 }
 
 header h1 {
-  font-size: 4em;
+  font-size: 4.5em;
+  font-family: 'Futura', sans-serif;
 }
 
 .cards {
@@ -42,8 +49,8 @@ article {
   display: flex;
   flex-direction: column;
   width: 19rem;
-  height: 15rem;
   margin: 0 1rem 3rem;
+  border-radius: 8px;
   box-shadow: rgba(0, 0, 0, 0.35) 0.95px 4.95px 7.6px;
   transition: all 0.4s ease-in-out;
 }
@@ -51,18 +58,23 @@ article {
 article:hover,
 article:focus,
 article:active {
-  transform: scale(1.2);
+  transform: scale(1.1);
   box-shadow: rgba(0, 0, 0, 0.473) 0.95px 14.95px 7.6px;
 }
 
 .card-header {
   width: 100%;
-  padding: 0.5rem;
-  text-align: center;
-  color: #fafafa;
-  background-color: #333333;
+  padding: 0.8rem;
+  font-family: 'Futura', sans-serif;
+  color: #ece9e6;
+  background: linear-gradient(180deg, rgba(208, 123, 179, 1) 0%, rgba(208, 123, 179, 0.5) 100%);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
+}
+
+.card-header h3 {
+  display: flex;
+  justify-content: space-between;
 }
 
 .card-content {
@@ -70,7 +82,7 @@ article:active {
   flex-direction: column;
   justify-content: space-around;
   padding: 0.5rem;
-  background-color: #fafafa;
+  background-color: #ece9e6;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
 }
@@ -90,7 +102,9 @@ a {
 a:hover,
 a:focus,
 a:active {
-  color: #ce9178;
+  color: #d07bb3;
   text-decoration: underline;
-  /* text-shadow: rgba(0, 0, 0, 0.644) 0.95px 4.95px 7.6px; */
 }
+  `;
+
+module.exports = CSS;
