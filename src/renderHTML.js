@@ -24,8 +24,6 @@ function renderEmployeeCard(x, filePath) {
 
   x.forEach((Employee) => {
     HTML += `
-
-    
     <article class="team-member">
       <div class="card-header">
         <h2>${Employee.name}</h2>
