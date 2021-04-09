@@ -1,5 +1,4 @@
 // imported modules
-const fs = require('fs');
 const inquirer = require('inquirer');
 
 // imported modules from ./lib
@@ -62,9 +61,19 @@ ask();
 // mock array of employees to run app without having to go through the inquirer prompts
 // function test() {
 //   const mockTeam = [
-//     new Manager('John Doe', '10', 'john@company.com', '111.111.1111'),
-//     new Engineer('Jane Smith', '15', 'jane@company.com', 'jane'),
-//     new Intern('Nora Grizzwold', '20', 'nora@company.com', 'Harvard University'),
+//     new Manager('John Doe', '01', 'john@company.com', '1.800.MAN.AGER'),
+//     new Manager('Jane Smith', '02', 'jane@company.com', '1.800.CAL.JANE'),
+//     new Manager('Nora Lopez', '03', 'nora@company.com', '1.800.CAL.NORA'),
+//     new Engineer('Joe Russo', '04', 'joe@company.com', 'yondav'),
+//     new Engineer('Craig Grizzly', '05', 'craig@company.com', 'yondav'),
+//     new Engineer('Michelle Jackson', '06', 'michelle@company.com', 'yondav'),
+//     new Engineer('Samantha Herk', '07', 'sammantha@company.com', 'yondav'),
+//     new Engineer('Emily Wallace', '08', 'emily@company.com', 'yondav'),
+//     new Engineer('Sarah Grey', '09', 'sarah@company.com', 'yondav'),
+//     new Engineer('Richard Lilly', '10', 'richard@company.com', 'yondav'),
+//     new Engineer('Francis Loizik', '11', 'francis@company.com', 'yondav'),
+//     new Intern('Albert Ronson', '12', 'albert@company.com', 'Harvard University'),
+//     new Intern('Sally Lindstar', '20', 'nora@company.com', 'Harvard University'),
 //   ];
 //   renderEmployeeCard(mockTeam, __dirname);
 // }

@@ -62,6 +62,7 @@ function getIcon(employee) {
       return `<h3>${employee.role} <i class="fas fa-user-graduate fa-lg"></i></i></h3>`;
   }
 }
+
 function getExtra(employee) {
   switch (employee.role) {
     case 'Manager':
