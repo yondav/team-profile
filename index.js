@@ -1,12 +1,12 @@
 // imported modules
 const inquirer = require('inquirer');
 
-// imported modules from ./lib
+// imported modules from ./src
 const questionsModule = require('./src/questions');
 const renderEmployeeCard = require('./src/renderHTML');
 const renderCSS = require('./src/renderCSS');
 
-// imported variables
+// imported variables from ./lib
 const Manager = require('./lib/manager');
 const Engineer = require('./lib/engineer');
 const Intern = require('./lib/intern');
