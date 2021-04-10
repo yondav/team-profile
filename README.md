@@ -122,7 +122,7 @@ Once the user is done, they can simply select `n` when prompted to add another e
 
 ## Live Demo
 
-<a href="https://youtu.be/GaliKi3ig9U">Full Video Demo</a>
+<a href="https://youtu.be/ZjA82UpRFCQ">Full Video Demo</a>
 
 ![demo](./images/demo.gif)
 
